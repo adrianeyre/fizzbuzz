@@ -31,3 +31,22 @@ We then linked our local repository to the Github repository
 > git remote add origin https://github.com/adrianeyre/fizzbuzz.git    # Link repositories
 > git push -u origin master                                           # Push local to remote
 ```
+
+## <b>Step 3</b> - Link Repositories with Paired Partners ##
+
+So that we were able to collaborate our projects we had to give each other permission to our repositories.
+
+```shell
+> git remote add <pair-partner> <URL-to-pair-partners-repo>     # Link my repository with Joes's
+
+> git fetch                                                     # Fetch Joe's repository
+> git pull <pair-partner> master                                # Pull it to my local repository
+```
+
+After we complete a section of code the partner who was coding had to add their file, commit them and then push the file up to their Github repository.
+
+```shell
+> git add <filename>            # Add file from staging area to repository
+> git commit -m "Description"   # Commit changes
+> git push                      # Push local to remote
+```
