@@ -2,9 +2,31 @@
 Pair Partner - [Joe Marriott] (https://github.com/J-Marriott)
 
 ## The Challenge ##
-The challenge was to make a simple “FizzBuzz” program that accepted one integer value into a method called fizzbuzz. The method checks for the following conditions: if the integer is divisible by 3 it returns ‘fizz’, if the integer is divisible by 5 it returns ‘buzz’, if the integer is divisible by 3 and 5 it returns ‘fizzbuzz’ and if none of the conditions are met it returns the integer.
+The challenge was to make a simple “FizzBuzz” program that accepted one integer value into a method called fizzbuzz. The method checks for the following conditions: if the integer is divisible by 3 it returns ‘fizz’, if the integer is divisible by 5 it returns ‘buzz’, if the integer is divisible by 3 and 5 it returns ‘fizzbuzz’ and if none of the conditions are met it returns the integer. Example below
+```shell
+1 --> 1
+2 --> 2
+3 --> fizz
+4 --> 4
+5 --> buzz
+6 --> fizz
+7 --> 7
+8 --> 8
+9 --> fizz
+10 --> buzz
+11 --> 11
+12 --> fizz
+13 --> 13
+14 --> 14
+15 --> fizzbuzz
+16 --> 16
+17 --> 17
+18 --> fizz
+19 --> 19
+20 --> buzz
+```
 
-As part of the challenge we took it in turns writing a failing test while the second partner had to write some code to make the test pass. We continued this process until all test were passed and the challenge was complete.
+As part of the challenge we took it in turns writing a failing test while the second partner had to write some code to make the test pass. We continued this process until all test were passed and the challenge was complete. This process is commonly  known as the "Ping Pong" method
 
 We split the task into several steps which are highlighted below.
 
@@ -49,4 +71,13 @@ After we complete a section of code the partner who was coding had to add their 
 > git add <filename>            # Add file from staging area to repository
 > git commit -m "Description"   # Commit changes
 > git push                      # Push local to remote
+```
+
+## <b>Step 4</b> - Setting up RSPEC ##
+
+We used the RSPEC framework to test our code to make sure it worked 100%. RSPEC once initialised creates two folders 'spec' where it stores the testing files and ‘lib’ where it stores the application code. Initially we had to install the RSPEC Gem then run the command to set up the directory structure.
+
+```shell
+> gem install rspec
+> rspec --init
 ```
