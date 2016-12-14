@@ -28,9 +28,16 @@ The challenge was to make a simple “FizzBuzz” program that accepted one inte
 
 As part of the challenge we took it in turns writing a failing test while the second partner had to write some code to make the test pass. We continued this process until all test were passed and the challenge was complete. This process is commonly  known as the "Ping Pong" method
 
-We split the task into several steps which are highlighted below.
+We split the task into several steps
 
-## <b>Step 1</b> - Setting up the local Repository ##
+* [Step 1 - Setting up the local Repository] (#step1)
+* [Step 2  - Setting up the Github Repository] (#step2)
+* [Step 3 - Link Repositories with Paired Partners (#step3)
+* [Step 4 - Setting up RSPEC] (#step4)
+* [Step 5 - Creating a test in RSPEC] (#step5)
+* [Step 6 - Final Tests and Code] (#step6)
+
+## <a name="step1"><b>Step 1</b> - Setting up the local Repository</a> ##
 
 Firstly we created a local repository on our computers
 
@@ -43,7 +50,7 @@ Firstly we created a local repository on our computers
 > git commit -m "Initial Commit"      # Commited the changes
 ```
 
-## <b>Step 2</b> - Setting up the Github Repository ##
+## <a name="step2"><b>Step 2</b> - Setting up the Github Repository</a> ##
 
 We logged into our Github account and created a repository called 'fizzbuzz' without initialising the "README.md" file because we had already created one
 
@@ -54,7 +61,7 @@ We then linked our local repository to the Github repository
 > git push -u origin master                                           # Push local to remote
 ```
 
-## <b>Step 3</b> - Link Repositories with Paired Partners ##
+## <a name="step3"><b>Step 3</b> - Link Repositories with Paired Partners</a> ##
 
 So that we were able to collaborate our projects we had to give each other permission to our repositories.
 
@@ -73,7 +80,7 @@ After we complete a section of code the partner who was coding had to add their 
 > git push                      # Push local to remote
 ```
 
-## <b>Step 4</b> - Setting up RSPEC ##
+## <a name="step4"><b>Step 4</b> - Setting up RSPEC</a> ##
 
 We used the RSPEC framework to test our code to make sure it worked 100%. RSPEC once initialised creates two folders 'spec' where it stores the testing files and ‘lib’ where it stores the application code. Initially we had to install the RSPEC Gem then run the command to set up the directory structure.
 
@@ -82,18 +89,18 @@ We used the RSPEC framework to test our code to make sure it worked 100%. RSPEC 
 > rspec --init
 ```
 
-## <b>Step 5</b> - Creating a test in RSPEC ##
+## <a name="step5"><b>Step 5</b> - Creating a test in RSPEC</a> ##
 
 The first partner created a file called ‘fizzbuzz_spec.rb” in the ./spec directory. We named it in this way because the application file was going to be called ‘fizzbuzz.rb’ and was going to be saved in the ./lib directory.
 
 The first test was nice and simple to check if we pass the integer 3 into the method ‘fizzbuzz’ it should return the string ‘fizz’
 
 ```ruby
-require 'fizzbuzz'
+require 'fizzbuzz'                      # Let RSPEC know what file to test
 
-describe 'fizzbuzz method' do
-  it '3 equals to fizz' do
-    expect(fizzbuzz(3)).to eq 'fizz'
+describe 'fizzbuzz' do                  # The method we're testing
+  it '3 equals to fizz' do              # Description of test
+    expect(fizzbuzz(3)).to eq 'fizz'    # Condition for test
   end
 end
 ```
@@ -108,7 +115,7 @@ As the file at this point was not created RSPEC gave some error messages, so it 
 
 We continued creating tests and code to pass the tests until we met all the requirements of the application.
 
-## <b>Step 6</b> - Final Tests and Code ###
+## <a name="step6"><b>Step 6</b> - Final Tests and Code</a> ###
 
 RSPEC tests
 ```ruby
