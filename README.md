@@ -88,7 +88,7 @@ The first partner created a file called ‘fizzbuzz_spec.rb” in the ./spec dir
 
 The first test was nice and simple to check if we pass the integer 3 into the method ‘fizzbuzz’ it should return the string ‘fizz’
 
-```rspec
+```ruby
 require 'fizzbuzz'
 
 describe 'fizzbuzz method' do
@@ -111,7 +111,7 @@ We continued creating tests and code to pass the tests until we met all the requ
 ## <b>Step 6</b> - Final Tests and Code ###
 
 RSPEC tests
-```rspec
+```ruby
 require 'fizzbuzz'
 
 describe 'fizzbuzz method' do
