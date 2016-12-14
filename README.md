@@ -81,3 +81,28 @@ We used the RSPEC framework to test our code to make sure it worked 100%. RSPEC 
 > gem install rspec
 > rspec --init
 ```
+
+## <b>Step 5</b> - Creating a test in RSPEC ##
+
+The first partner created a file called ‘fizzbuzz_spec.rb” in the ./spec directory. We named it in this way because the application file was going to be called ‘fizzbuzz.rb’ and was going to be saved in the ./lib directory.
+
+The first test was nice and simple to check if we pass the integer 3 into the method ‘fizzbuzz’ it should return the string ‘fizz’
+
+```rspec
+require 'fizzbuzz'
+
+describe 'fizzbuzz method' do
+  it '3 equals to fizz' do
+    expect(fizzbuzz(3)).to eq 'fizz'
+  end
+end
+```
+
+We then ran the RSPEC command to check if our tested passed or failed
+
+```shell
+> rspec ./spec/fizzbuzz_spec.rb
+```
+
+As the file at this point was not created RSPEC gave some error messages, so it was down to the second partner to create the file and write the code that passed the test.
+
