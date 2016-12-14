@@ -106,3 +106,60 @@ We then ran the RSPEC command to check if our tested passed or failed
 
 As the file at this point was not created RSPEC gave some error messages, so it was down to the second partner to create the file and write the code that passed the test.
 
+We continued creating tests and code to pass the tests until we met all the requirements of the application.
+
+## <b>Step 6</b> - Final Tests and Code ###
+
+RSPEC tests
+```rspec
+require 'fizzbuzz'
+
+describe 'fizzbuzz method' do
+  it '3 equals to fizz' do
+    expect(fizzbuzz(3)).to eq 'fizz'
+  end
+  it '5 equals to buzz' do
+    expect(fizzbuzz(5)).to eq 'buzz'
+  end
+  it '15 equals to fizzbuzz' do
+    expect(fizzbuzz(15)).to eq 'fizzbuzz'
+  end
+  it '8 equals to 8' do
+    expect(fizzbuzz(8)).to eq 8
+  end
+end
+
+describe 'fizzbuzz Fixnum' do
+  it '3 equals to fizz' do
+    expect(3.fizzbuzz).to eq 'fizz'
+  end
+  it '5 equals to buzz' do
+    expect(5.fizzbuzz).to eq 'buzz'
+  end
+  it '15 equals to fizzbuzz' do
+    expect(15.fizzbuzz).to eq 'fizzbuzz'
+  end
+  it '8 equals to 8' do
+    expect(8.fizzbuzz).to eq 8
+  end
+end
+```
+
+Ruby code
+```ruby
+def fizzbuzz(num)
+  result = ""
+  result += "fizz" if num % 3 == 0
+  result += "buzz" if num % 5 == 0
+  result == "" ? num : result
+end
+
+class Integer
+  def fizzbuzz
+    result = ""
+    result += "fizz" if self % 3 == 0
+    result += "buzz" if self % 5 == 0
+    result == "" ? self : result
+  end
+end
+```
