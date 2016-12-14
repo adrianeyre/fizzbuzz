@@ -20,3 +20,14 @@ Firstly we created a local repository on our computers
 > git add README.md                   # Added the README file from the staging area to the repository
 > git commit -m "Initial Commit"      # Commited the changes
 ```
+
+## <b>Step 2</b> - Setting up the Github Repository ##
+
+We logged into our Github account and created a repository called 'fizzbuzz' without initialising the "README.md" file because we had already created one
+
+We then linked our local repository to the Github repository
+
+```shell
+> git remote add origin https://github.com/adrianeyre/fizzbuzz.git    # Link repositories
+> git push -u origin master                                           # Push local to remote
+```
