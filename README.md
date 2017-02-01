@@ -1,4 +1,5 @@
 # FizzBuzz Pair Programming Challenge #
+#### Technologies: Ruby, Rspec
 Pair Partner - [Joe Marriott] (https://github.com/J-Marriott)
 
 ## The Challenge ##
