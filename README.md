@@ -1,6 +1,6 @@
 # FizzBuzz Pair Programming Challenge #
 #### Technologies: Ruby, Rspec
-Pair Partner - [Joe Marriott] (https://github.com/J-Marriott)
+Pair Partner - [Joe Marriott](https://github.com/J-Marriott)
 
 ## The Challenge ##
 The challenge was to make a simple “FizzBuzz” program that accepted one integer value into a method called fizzbuzz. The method checks for the following conditions: if the integer is divisible by 3 it returns ‘fizz’, if the integer is divisible by 5 it returns ‘buzz’, if the integer is divisible by 3 and 5 it returns ‘fizzbuzz’ and if none of the conditions are met it returns the integer. Example below
