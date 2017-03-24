@@ -31,12 +31,12 @@ As part of the challenge we took it in turns writing a failing test while the se
 
 We split the task into several steps
 
-* [Step 1 - Setting up the local Repository] (#step1)
-* [Step 2  - Setting up the Github Repository] (#step2)
-* [Step 3 - Link Repositories with Paired Partners] (#step3)
-* [Step 4 - Setting up RSPEC] (#step4)
-* [Step 5 - Creating a test in RSPEC] (#step5)
-* [Step 6 - Final Tests and Code] (#step6)
+* [Step 1 - Setting up the local Repository](#step1)
+* [Step 2  - Setting up the Github Repository](#step2)
+* [Step 3 - Link Repositories with Paired Partners](#step3)
+* [Step 4 - Setting up RSPEC](#step4)
+* [Step 5 - Creating a test in RSPEC](#step5)
+* [Step 6 - Final Tests and Code](#step6)
 
 ## <a name="step1"><b>Step 1</b> - Setting up the local Repository</a> ##
 
